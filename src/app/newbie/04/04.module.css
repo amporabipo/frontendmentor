@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 38rem;
+  height: 25rem;
+  border-radius: 50px;
+  margin: 0px 2em;
+  transition: all 300ms;
+}
+
+.sideleft {
+  flex: 1;
+  background-image: url('/04/image-product-desktop.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.sideright {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 0px 10px 10px 0px;
+  padding: 2em;
+}
+
+.sideright .slug {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sideright h1 {
+  color: hsl(212, 21%, 14%);
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  display: block;
+  margin-bottom: 0.8em;
+  line-height: 1em;
+}
+
+.sideright p {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 1.5em;
+  display: block;
+  margin-bottom: 2em;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.price {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 2em;
+
+}
+
+.price span:first-child {
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  font-size: 2em;
+  color: #41826a;
+}
+
+.price span:last-child {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.mybtn {
+  width: 100%;
+  outline: none;
+  border: 0px;
+  background-color: #41826a;
+  color: #f9f9f9;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.mybtn:hover {
+  background-color: #1a4031;
+  cursor: pointer;
+}
+
+@media(max-width: 475px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 45rem;
+    margin: 0px 1em;
+  }
+
+  .sideleft {
+    flex-grow: 1.5;
+    background-image: url('/04/image-product-mobile.jpg');
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .sideright {
+    flex-grow: 2;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1em 1.5em;
+  }
+
+  .sideright h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .sideright p {
+    margin-bottom: 1.5em;
+  }
+
+  .price {
+    margin-bottom: 1em;
+  }
+}
