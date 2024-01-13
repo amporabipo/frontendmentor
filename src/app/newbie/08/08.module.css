@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* 
+font-family: "Work Sans", sans-serif;
+*/
+
+.container {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/08/background-pattern-desktop.svg') top center no-repeat;
+  background-size: contain;
+  background-color: hsl(275, 100%, 97%);
+  transition: all 300ms;
+}
+
+.cardfaqs {
+  background-color: #f9f9f9;
+  max-width: 35rem;
+  height: auto;
+  border-radius: 20px;
+  padding: 3em 4em;
+  transition: all 300ms;
+}
+
+.faqs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.faqs h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: hsl(292, 42%, 14%);
+  font-family: "Work Sans", sans-serif;
+}
+
+.col {
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+
+.colhead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colhead h3 {
+  font-weight: 600;
+  font-size: 1.3em;
+  color: hsl(292, 42%, 14%);
+}
+
+.content {
+  margin: 1em 0em;
+  font-family: "Work Sans", sans-serif;
+  color: hsl(292, 16%, 49%);
+  line-height: 1.5em;
+
+}
+
+.content_collapsed {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .container {
+    background: url('/08/background-pattern-mobile.svg') top center no-repeat;
+    background-size: contain;
+    background-color: hsl(275, 100%, 97%);
+  }
+
+  .cardfaqs {
+    margin: 0em 2em;
+  }
+
+  .colhead h3 {
+    font-size: 1em;
+  }
+}

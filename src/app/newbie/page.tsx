@@ -62,6 +62,13 @@ export default function Home() {
                   nums='6'
                 />
               </li>
+              <li className={style.listnew}>
+                <LinkBtn
+                  to="newbie/07"
+                  text="huddle landing page"
+                  nums='7'
+                />
+              </li>
             </ul>
           </div>
         </div>

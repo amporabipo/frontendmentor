@@ -24,7 +24,7 @@
 
 .card {
   width: 17em;
-  height: 15em;
+  height: 18em;
   border-radius: 10px;
   background-color: #ffffff;
   border: 1px solid #dbe5e6;
@@ -33,7 +33,7 @@
   align-items: center;
   flex-direction: column;
   font-size: 25px;
-  padding: 2em;
+  padding: 1em 2em;
   transition: all 300ms;
 }
 
@@ -59,7 +59,7 @@
   display: flex;
   border: 3px solid rgb(106, 190, 205);
   border-radius: 5px;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   cursor: pointer;
 }
