@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.card {
+  width: 50rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 10px 10px 24px 4px rgba(235, 241, 255, 1);
+  margin: 0em 2em;
+
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0em;
+  }
+}
+
+.result {
+  border-radius: 30px;
+  width: 50%;
+  background: rgb(46, 43, 233);
+  background: linear-gradient(0deg, rgba(46, 43, 233, 1) 0%, rgba(120, 87, 255, 1) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+}
+
+@media screen and (max-width: 700px) {
+  .result {
+    width: auto;
+    border-radius: 0px 0px 40px 40px;
+  }
+}
+
+.result h3 {
+  color: hsl(241, 100%, 89%);
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .result h3 {
+    margin-bottom: 1em;
+  }
+}
+
+.circleresult {
+  text-align: center;
+  border-radius: 100%;
+  padding: 3em 3.5em;
+  background: rgb(78, 33, 202);
+  background: linear-gradient(0deg, hsla(241, 72%, 46%, 0) 0%, hsla(256, 72%, 46%, 1) 100%);
+}
+
+@media screen and (max-width: 700px) {
+  .circleresult {
+    margin-bottom: 2em;
+  }
+}
+
+.circleresult span:first-child {
+  color: #f9f9f9;
+  display: block;
+  font-size: 4em;
+  font-weight: 800;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.circleresult span:last-child {
+  color: hsl(241, 100%, 89%);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+.result h2 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  color: #f9f9f9;
+  font-size: 1.8em;
+}
+
+@media screen and (max-width: 700px) {
+  .result h2 {
+    margin-bottom: 1em;
+  }
+}
+
+.result p {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 400;
+  color: hsl(241, 100%, 89%);
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0px 1.5em;
+}
+
+@media screen and (max-width: 700px) {
+  .result p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+}
+
+.summary {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2em;
+}
+
+@media screen and (max-width: 700px) {
+  .summary {
+    width: auto;
+  }
+}
+
+.summary h3 {
+  font-size: 2em;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.summary button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 1em 1em;
+  margin-top: 1em;
+  font-weight: 700;
+  font-size: 18px;
+  color: #f9f9f9;
+  background-color: #303b59;
+  font-family: "Hanken Grotesk", sans-serif;
+  transition: all 300ms;
+}
+
+@media screen and (max-width: 700px) {}
+
+.summary button:hover {
+  cursor: pointer;
+  background: rgb(46, 43, 233);
+  background: linear-gradient(0deg, rgba(46, 43, 233, 1) 0%, rgba(120, 87, 240, 1) 100%);
+}
+
+.base {
+  width: 85%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 700px) {
+  .base {
+    width: 90%;
+  }
+}
+
+.red {
+  background-color: #fff6f5;
+  color: #d6706e;
+}
+
+.yellow {
+  background-color: #fffbf2;
+  color: #dfbd75;
+}
+
+.green {
+  background-color: #f2fbfa;
+  color: #2ca989;
+}
+
+.violet {
+  background-color: #f3f3fd;
+  color: #1c2489;
+}
+
+.base .pard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.base .pard span {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  margin-left: 15px;
+  font-size: 1.2em;
+}
+
+.porcent {
+  color: #b3afb0;
+  font-weight: 500;
+}
+
+.porcent em {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
