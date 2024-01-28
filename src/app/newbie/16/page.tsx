@@ -9,7 +9,7 @@ export default function Newbie16(){
             <div className={style.card}>
                <div className={style.imgprofile}>
                   <Image
-                     src={'/16/avatar-jessica.jpeg'}
+                     src={"/16/avatar-jessica.jpeg"}
                      width={100}
                      height={100}
                      alt="profile"
@@ -20,23 +20,23 @@ export default function Newbie16(){
                <div className={style.descript}>
                   <h2>Jessica Randall</h2>
                   <h3>London, United Kingdom</h3>
-                  <h4>&ldquoFront-end developer and avid reader&ldquo</h4>
+                  <h4>&ldquo Front-end developer and avid reader &ldquo</h4>
                </div>
                <div className={style.linksc}>
                      <Links
-                        names={'Github'}
+                        names={"Github"}
                      />
                      <Links
-                        names={'Frontend Mentor'}
+                        names={"Frontend Mentor"}
                      />
                      <Links
-                        names={'LinkedIng'}
+                        names={"LinkedIng"}
                      />
                      <Links
-                        names={'Twitter'}
+                        names={"Twitter"}
                      />
                      <Links
-                        names={'Instagram'}
+                        names={"Instagram"}
                      />
                </div>
             </div>
@@ -54,7 +54,7 @@ function Links({names}: PropsLinks){
       <>
          <div className={style.links}>
             <Link
-               href={'https://a.com'}
+               href={"https://a.com"}
             >
                {names}
             </Link>
