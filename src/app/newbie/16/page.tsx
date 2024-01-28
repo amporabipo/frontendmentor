@@ -20,7 +20,7 @@ export default function Newbie16(){
                <div className={style.descript}>
                   <h2>Jessica Randall</h2>
                   <h3>London, United Kingdom</h3>
-                  <h4>"Front-end developer and avid reader"</h4>
+                  <h4>&ldquoFront-end developer and avid reader&ldquo</h4>
                </div>
                <div className={style.linksc}>
                      <Links
