@@ -1,14 +1,12 @@
 'use client'
 import style from "@/app/newbie/17/17.module.css"
 import Link from "next/link"
-import Image from "next/image"
-
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { FormSchema, formSchema } from "@/app/newbie/17/validate.schema"
 import { zodResolver } from '@hookform/resolvers/zod'
 import clsx from "clsx"
-import { useEffect, useState } from "react"
-import { boolean } from "zod"
+import { useState } from "react"
+
 
 
 export default function Newbiew17() {
@@ -16,8 +14,7 @@ export default function Newbiew17() {
    const {
       register,
       handleSubmit,
-      setError,
-      formState: { errors, isLoading },
+      formState: { errors },
    } = useForm<FormSchema>({ resolver: zodResolver(formSchema) })
 
    const onSubmit: SubmitHandler<FormSchema> = async (data) => {
