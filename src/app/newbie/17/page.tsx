@@ -18,11 +18,7 @@ export default function Newbiew17() {
    } = useForm<FormSchema>({ resolver: zodResolver(formSchema) })
 
    const onSubmit: SubmitHandler<FormSchema> = async (data) => {
-      try {
-         console.log(data)
-      } catch (error) {
-         console.log(error)
-      }
+
 
    }
 
