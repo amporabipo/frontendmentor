@@ -2,7 +2,7 @@
 import style from "@/app/newbie/17/17.module.css"
 import Link from "next/link"
 import { useForm, SubmitHandler } from 'react-hook-form'
-import { FormSchema, formSchema } from "@/app/newbie/17/validate.schema"
+import { FormSchema, formSchema } from "@/dist/newbie/17/validate.schema"
 import { zodResolver } from '@hookform/resolvers/zod'
 import clsx from "clsx"
 import { useState } from "react"
@@ -55,6 +55,7 @@ export default function Newbiew17() {
                               id="name"
                               required
                               placeholder="First Name"
+                              autoComplete="true"
                               {...register('name')}
                               className={clsx(style.baseinput, {
                                  [style.errorinput]: mystate === false
@@ -72,6 +73,7 @@ export default function Newbiew17() {
                               id="lastname"
                               required
                               placeholder="Last Name"
+                              autoComplete="true"
                               {...register('lastname')}
                               className={clsx(style.baseinput, {
                                  [style.errorinput]: mystate === false
@@ -89,6 +91,7 @@ export default function Newbiew17() {
                               id="email"
                               required
                               placeholder="Email Address"
+                              autoComplete="true"
                               {...register('email')}
                               className={clsx(style.baseinput, {
                                  [style.errorinput]: mystate === false
@@ -106,6 +109,7 @@ export default function Newbiew17() {
                               id="password"
                               required
                               placeholder="Password"
+                              autoComplete="true"
                               {...register('password')}
                               className={clsx(style.baseinput, {
                                  [style.errorinput]: mystate === false
