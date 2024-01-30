@@ -120,7 +120,7 @@ export default function Newbiew17() {
                      </fieldset>
                      <button type="submit" onClick={handleStyleError}> Claim your free trial</button>
                   </form>
-                  <h6>By clicking the button, you are agreeing to our <Link href={'http://'}>Terms and Services</Link></h6>
+                  <h6>By clicking the button, you are agreeing to our <Link href={'/a'}>Terms and Services</Link></h6>
                </div>
             </div>
          </div>
