@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*
+  font-family: "Josefin Sans", sans-serif;
+*/
+.container {
+  display: grid;
+  grid-template-areas:
+    "logo div-right"
+    "div-left div-right ";
+  grid-template-rows: auto;
+  grid-template-columns: 1.1fr 1fr;
+  height: 100vh;
+  background: url('/18/bg-pattern-desktop.svg') no-repeat bottom left;
+  background-size: cover;
+
+}
+
+.myform {
+  box-sizing: border-box;
+}
+
+.logo {
+  grid-area: logo;
+  padding: 4em 0em 0em 6rem;
+}
+
+.divleft {
+  grid-area: div-left;
+  height: 100%;
+
+}
+
+.text {
+  padding: 0em 0em 0em 6rem;
+}
+
+.text span:nth-child(1) {
+  display: block;
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+  line-height: 1;
+  letter-spacing: 0.1em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.text span:nth-child(2) {
+  display: block;
+  font-size: 5em;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.text span:nth-child(3) {
+  display: block;
+  font-size: 5em;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.text p {
+  color: hsl(0, 36%, 70%);
+  line-height: 1.5;
+  text-wrap: balance;
+  font-size: 16px;
+  width: 65%;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.divform {
+  padding: 0em 0em 0em 6rem;
+  box-sizing: border-box;
+}
+
+.myform {
+  display: flex;
+  align-items: center;
+}
+
+.baseinput {
+  position: relative;
+  width: 110%;
+  padding: 1.4em 1em 1.4em 2em;
+  border-radius: 50px;
+  font-weight: 600;
+  outline: none;
+  color: hsl(0, 36%, 70%);
+  border: 1px solid hsl(0, 36%, 70%);
+  background: none;
+}
+
+.myform input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 36%, 70%);
+  font-weight: 600;
+}
+
+.myform button {
+  position: relative;
+  width: 100px;
+  line-height: 1;
+  padding: 1.5em 0em 1.5em 0em;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 50px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  z-index: 2;
+  transition: all 300ms;
+}
+
+.myform button:hover {
+  background: linear-gradient(135deg, hsl(0, 69%, 94%), hsl(0, 79%, 85%));
+  cursor: pointer;
+  box-shadow: 0px 5px 15px 3px rgba(248, 191, 191, 0.67);
+}
+
+.errorinput {
+  border: 1px solid red;
+  background: url('/18/icon-error.svg') no-repeat center right 28%;
+}
+
+.myform button img {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  object-fit: contain;
+}
+
+.errorspan {
+  margin-left: 15px;
+  margin-top: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  color: red;
+  display: block;
+}
+
+.divrigth {
+  grid-area: div-right;
+  height: 100%;
+  background: url('/18/hero-desktop.jpg') no-repeat center;
+  background-size: cover;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-areas:
+      "logo"
+      "div-right"
+      "div-left";
+    grid-template-rows: 0.2fr 1fr 2fr;
+    grid-template-columns: 1fr;
+    background: url('/18/bg-pattern-desktop.svg') no-repeat bottom left;
+    background-size: cover;
+  }
+
+  .logo {
+    grid-area: logo;
+    padding: 2em 0em 2em 3em;
+  }
+
+  .logo img {
+    width: 25%;
+    height: 95%;
+  }
+
+  .divrigth {
+    grid-area: div-right;
+    height: 20rem;
+    background: url('/18/hero-mobile.jpg')no-repeat center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  .divleft {
+    grid-area: div-left;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .text {
+    margin: 0;
+    padding: 0em 2em;
+
+  }
+
+  .text span:nth-child(1) {
+    margin-top: 2em;
+    text-align: center;
+    display: block;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .text span:nth-child(2) {
+    text-align: center;
+    display: block;
+    font-size: 3.5em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .text span:nth-child(3) {
+    text-align: center;
+    display: block;
+    font-size: 3.5em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .text p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .divform {
+    padding: 0;
+    margin: 0;
+  }
+
+  .myform {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .baseinput {
+    width: 100%;
+  }
+
+  .errorspan {
+    text-align: center;
+  }
+
+  .errorinput {
+    border: 1px solid red;
+    background: url('/18/icon-error.svg') no-repeat center right 20%;
+  }
+
+}
