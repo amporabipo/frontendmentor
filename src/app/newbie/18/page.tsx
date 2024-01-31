@@ -34,11 +34,11 @@ export default function Newbie18() {
       <div className={style.container}>
         <div className={style.divleft}>
           <div className={style.text}>
-            <span>We're</span>
+            <span>We&apos;re</span>
             <span>coming</span>
             <span>soon</span>
             <p>Hello fellow shoppers!
-              We're currently building
+              We&apos;re currently building
               our new fashion store.
               Add your email below
               to stay up-to-date
